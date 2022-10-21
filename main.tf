@@ -19,10 +19,10 @@ resource "azurerm_postgresql_server" "example" {
   ssl_minimal_tls_version_enforced = "TLS1_2"
 }
 
-resource "azurerm_postgresql_firewall_rule" "example" {
-  name                = "AzureServices"
-  resource_group_name = var.rg_name
-  server_name         = azurerm_postgresql_server.example.name
-  start_ip_address    = "0.0.0.0"
-  end_ip_address      = "0.0.0.0"
-}
+#resource "azurerm_postgresql_firewall_rule" "example" {
+#  name                = "AzureServices"
+#  resource_group_name = var.rg_name
+#  server_name         = azurerm_postgresql_server.example.name
+#  start_ip_address    = "0.0.0.0"
+#  end_ip_address      = "0.0.0.0"
+#}
